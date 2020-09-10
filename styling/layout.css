@@ -1,65 +1,72 @@
 body{
-  width: 480px;
+  /* width: 480px; */
   margin: auto;
+  align-content: center;
 }
 
 div {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  float: left;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #a {
-  width: 480px;
+  grid-column: 1/3;
   height: 75px;
   background-color: cadetblue
+  
 }
 
 #b {
-  width: 480px;
+  grid-column: 1/3;
   height: 150px;
   background-color: cyan
 }
 
 #c {
-  width: 480px;
+  grid-column: 1/3;
   height: 125px;
   background-color: bisque
 }
 
 #d {
-  width: 480px;
+  grid-column: 1/3;
   height: 125px;
   background-color: aquamarine
 }
 
 #e {
-  width: 240px;
+  grid-column: 1;
   height: 250px;
   background-color: grey
 }
 
 #f {
-  width: 240px;
+  grid-column: 2;
   height: 250px;
   background-color: yellowgreen
+
 }
 
 #g {
-  width: 240px;
+grid-column: 1;
   height: 250px;
   background-color: gold
 }
 
 #h {
-  width: 240px;
+  grid-column: 2;
   height: 250px;
   background-color: lemonchiffon
 }
 
 #i {
-  width: 480px;
+  grid-column: 1/3;
   height: 80px;
   background-color: lightskyblue
 }
@@ -68,64 +75,85 @@ div {
   body {
     width: 960px;
   }
+  main {
+    grid-template-columns: 200px 250px 250px 250px 250px;
+    grid-template-rows: 100px 200px 250px 150px;
+    display: grid;
+  }
   div {
-    display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
   }
   
   #a {
-    width: 960px;
-    height: 100px;
+    grid-column:1/6;
+    grid-row: 1/2;
+    height:auto;
+    width: auto;
     background-color: darkseagreen
   }
   
   #b {
-    width: 200px;
-    height: 600px;
+    grid-column:1/1;
+    grid-row: 2/6;
+    height:auto;
+    width:auto;
     background-color: darkkhaki
   }
   
   #c {
-    width: 380px;
-    height: 200px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    height:auto;
+    width: auto;
     background-color: rosybrown
   }
   
   #d {
-    width: 380px;
-    height: 200px;
+    grid-column: 4/6;
+    grid-row: 2/3;
+    height:auto;
+    width: auto;
     background-color: lightcoral
   }
   
   #e {
-    width: 190px;
-    height: 250px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height:auto;
+    width: auto;
     background-color: khaki
   }
   
   #f {
-    width: 190px;
-    height: 250px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    height:auto;
+    width: auto;
     background-color: floralwhite
   }
   
   #g {
-    width: 190px;
-    height: 250px;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    height:auto;
+    width: auto;
     background-color: green
   }
   
   #h {
-    width: 190px;
-    height: 250px;
+    grid-column: 5/6;
+    grid-row: 3/4;
+    height:auto;
+    width: auto;
     background-color: hotpink
   }
   
   #i {
-    width: 760px;
-    height: 150px;
+    grid-column: 2/6;
+    grid-row: 4/5;
+    height:auto;
+    width: auto;
     background-color: yellow
   }
   }
